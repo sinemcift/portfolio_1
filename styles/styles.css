@@ -1,0 +1,235 @@
+@charset "utf-8";
+/* main portfolio styles */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+/*hvis der er noget galt med linket af en eller anden grund, så vil browseren altid falde tilbage til font-familen sans-serif*/ 
+
+*{
+	margin:0;
+	padding:0;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	background-: #FFFFFF;
+}
+.main-nav{
+	list-style-type: none; /*fjerner bulletpointsne i listen*/
+	background-color: #7fc7af; /* farver laver navigations barens baggrund. */
+	box-shadow: 0px -10px 70px #666;
+	
+}
+.main-nav li {
+	display: inline-block; /*sætter dem på en lige linje*/
+	margin: 25px;
+	justify-content: space-around;
+	padding: 25px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+.main-nav li:hover{
+	background-color: #295F4D; 
+}
+.main-nav li a {
+	display:block;
+	color: #FFFFFF;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-family: "roboto", sans-serif;
+	font-size: 15px;
+}
+#navigation{
+	align-content: space-around;
+}
+#navigation a {
+	padding: 10px 15px;
+	align-content: space-around;
+}
+#navigation a:hover {
+	background-color: #BADED4;
+	border: 1px solid white;
+}
+
+.site-branding {
+	text-align: center;
+	margin-top: 170px;
+}
+.site-title a {
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+	font-size: 80px;
+	text-decoration: none;
+	color: #7fc7af;
+}
+.site-description a {
+	text-align: center;
+	color:#7fc7af;
+	display: block;
+	align-content: center;
+	font-size: 20px;
+}
+.description {
+	text-align: center;
+}
+#page-title {
+	color: #7fc7af;
+	font-weight: bolder;
+	margin-left:100px;
+	margin-top: 75px;
+}
+table {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	width: 60%;
+}
+.poster-project {
+	color: #7fc7af;
+	padding:0 0 30px 35px;
+	font-size: 40px;
+	font-weight: bold;
+}
+.sofa-project {
+	color: #7fc7af;
+	padding:0 35px 30px 0px;
+	font-size: 40px;
+	font-weight: bold;
+ }
+.poster-lorem {
+	padding:0 0 35px 35px;
+	color: #7fc7af;
+}
+.sofa-lorem {
+	padding: 0 35px 30px 0px;
+	color: #7fc7af;
+}
+.plakat img {
+	height: 250px;
+	border: none;
+	margin-bottom: 40px;
+}
+.sofa-picture img {
+	height: 250px;
+	border:none;
+	margin-bottom: 60px;
+}
+.timeline {
+	position:relative;
+	margin: 50px auto;
+	padding: 40px 0;
+	width: 1000px;
+	box-sizing: border-box;
+}
+.timeline:before {
+	content: '';
+	position: absolute;
+	left: 50%;
+	width: 2px;
+	height: 100%;
+	background: #7fc7af;
+}
+.timeline ul{
+	margin: 0;
+	padding: 0;
+}
+.timeline ul li{
+	line-height: normal;
+	position: relative;
+	width: 50%;
+	padding: 20px 40px;
+	box-sizing: border-box;
+	list-style: none;
+}
+.timeline ul li:nth-child(odd){
+	float: left;
+	text-align: right;
+	clear: both;
+}
+.timeline ul li:nth-child(even){
+	float: right;
+	text-align: left;
+	clear: both;
+}
+.content{
+	padding-bottom: 20px;
+}
+.timeline ul li:nth-child(odd):before{
+	content: '';
+	position: absolute;
+	top:24px;
+	right: -6px;
+	width: 10px;
+	height: 10px;
+	background: rgba(127,199,175,1.00);
+	border-radius: 50%;
+	box-shadow: 0 0 0 3px rgba(127,199,175,0.5);
+}
+.timeline ul li:nth-child(even):before{
+	content: '';
+	position: absolute;
+	top:24px;
+	left: -4px;
+	width: 10px;
+	height: 10px;
+	background: rgba(127,199,175,1.00);
+	border-radius: 50%;
+	box-shadow: 0 0 0 3px rgba(127,199,175,0.5);
+}
+.timeline ul li h3 {
+	margin: 0;
+	padding: 0; 
+	font-weight: 600;
+	color: rgba(127,199,175,1);
+}
+.timeline ul li p {
+	margin: 10px 0 0;
+	padding: 0;
+}
+.timeline ul li .time h4 {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+}
+.timeline ul li:nth-child(odd) .time{
+	position: absolute;
+	top: 12px;
+	right: -165px;
+	margin: 0;
+	padding: 8px 16px;
+	background: rgba(127,199,175,1);
+	color: #fff;
+	border-radius: 18px;
+	box-shadow: 0 0 0 3px rgba(127,199,175,0.3);
+}
+.timeline ul li:nth-child(even) .time{
+	position: absolute;
+	top: 12px;
+	left: -165px;
+	margin: 0;
+	padding: 8px 16px;
+	background: rgba(127,199,175,1);
+	color: #fff;
+	border-radius: 18px;
+	box-shadow: 0 0 0 3px rgba(127,199,175,0.3);
+}
+form {
+	width: 35vw;
+	margin: 40px auto;
+	border: 5px solid #7fc7af;
+	
+	padding: 25px;
+	color: #7fc7af;
+	}
+
+footer {
+	position: relative;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #7fc7af;
+	padding: 10px 10px 10px 25px;
+	color: #FFF;
+}
+.footer-social{
+}
